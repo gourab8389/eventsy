@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    background-color: black;
+    padding: 1rem; /* padding for the nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+  }
+  
+  nav li {
+    cursor: pointer;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav li:hover,
+  nav a:hover {
+    text-decoration: underline;
+    color: gray;
+  }
+  

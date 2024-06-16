@@ -1,10 +1,28 @@
+import AboutSection from "@/components/AboutSection";
+import Colaborations from "@/components/Colaborations";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="relative flex items-center justify-center h-screen bg-blue-500 dark:bg-black-100">
-      <div className="absolute inset-0 flex items-center justify-center bg-white dark:bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none"></div>
-      <Hero />
+    <main className="h-full w-full relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          className="w-full h-full object-cover"
+        >
+          <source src="/blackhole.webm" type="video/webm" />
+        </video>
+      </div>
+      <div className="relative z-10 flex flex-col gap-20">
+        <Hero />
+        <Colaborations />
+        <AboutSection/>
+        <Footer/>
+      </div>
+      
     </main>
   );
 }

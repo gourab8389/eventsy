@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavItem from "@/components/NavItem";
+import StarsCanvas from "@/components/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-black sticky top-0 left-0 p-4 z-50 w-full">
+      <StarsCanvas />
+        <div className="sticky top-0 left-0 z-50 w-full">
           <NavItem />
         </div>
         {children}

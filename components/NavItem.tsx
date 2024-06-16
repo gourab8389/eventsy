@@ -33,29 +33,28 @@ const NavItem: React.FC = () => {
   }, [user]);
 
   return (
-    <nav className='bg-black p-4 flex justify-between items-center'>
+    <nav className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10'>
       <ul className='text-white flex gap-4 m-0 p-0'>
         <li className='cursor-pointer hover:text-gray-400'>
           <Link href='/'>Home</Link>
         </li>
         <li className='cursor-pointer hover:text-gray-400'>
-          <Link href='/about'>About</Link>
-        </li>
-        <li className='cursor-pointer hover:text-gray-400'>
           <Link href='/events'>Events</Link>
         </li>
+        {user ? (
         <li className='cursor-pointer hover:text-gray-400'>
           <Link href='/profile'>Profile</Link>
         </li>
+        ):""}
       </ul>
       <ul className='flex gap-4 m-0 p-0 text-white'>
         {user ? (
-          <li className='cursor-pointer hover:text-gray-400'>
+          <li className='cursor-pointer hover:text-gray-800'>
             <Button onClick={logout}>Logout</Button>
           </li>
         ) : (
           <>
-            <li className='cursor-pointer hover:text-gray-400'>
+            <li className='cursor-pointer hover:text-gray-800'>
               <Button onClick={login}>Login</Button>
             </li>
           </>

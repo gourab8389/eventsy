@@ -6,56 +6,16 @@ import Image from 'next/image'
 
 const AboutSection = () => {
   return (
-    <div id='/about'>
-      <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
-      <div className="absolute w-auto h-auto top-0 z-[5]">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200"
-        >
-          About
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            {" "}
-          </span>
-          Us...
-        </motion.div>
-      </div>
-
-      <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
-        <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
-          <Image
-            src="/LockTop.png"
-            alt="Lock top"
-            width={50}
-            height={50}
-            className="w-[50px] translate-y-5 transition-all duration-200 group-hover:translate-y-11"
-          />
-          <Image
-            src="/LockMain.png"
-            alt="Lock Main"
-            width={70}
-            height={70}
-            className=" z-10"
-          />
-        </div>
-
-        <div className="Welcome-box px-[15px] py-[4px] z-[20] brder my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[12px]">Eventsy</h1>
-        </div>
-      </div>
-
-      <div className="w-full flex items-start justify-center absolute">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          preload="false"
-          className="w-full h-auto"
-          src="/encryption.webm/"
-        />
-      </div>
-    </div>
+    <div className='items-center justify-center flex flex-col mt-2 mx-4 pt-2 lg:pt-40'>
+      <h1 className='text-white text-3xl md:text-5xl lg:text-6xl font-bold cursor-pointer mt-4'>
+        Our
+        <span className='text-purple-500 hover:text-white cursor-pointer'>Services</span>
+      </h1>
+      <p className='text-white text-sm md:text-xl lg:text-2xl mt-4 px-10 lg:px-20'>
+      Welcome to Prime Services, your trusted partner for comprehensive solutions tailored to meet your unique needs. We are a team of dedicated professionals committed to delivering exceptional services across a wide range of industries. With years of experience and a passion for excellence, we aim to provide unparalleled support to help you achieve your goals.
+      </p>
+      <p className='text-white text-sm md:text-xl lg:text-2xl mt-4 px-10 lg:px-20'>At Prime Services, our mission is to offer top-notch services that exceed our clients' expectations. We strive to build long-lasting relationships based on trust, integrity, and superior performance. Our goal is to be the go-to service provider, known for our reliability and customer-centric approach.</p>
+      
     </div>
   )
 }

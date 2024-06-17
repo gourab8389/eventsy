@@ -10,6 +10,7 @@ interface Props {
     width: number;
     height: number;
     index: number;
+    className: string;
 }
 
 const ColaborationDataProvider = ({ src, width, height, index }: Props) => {

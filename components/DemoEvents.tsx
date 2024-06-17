@@ -44,7 +44,7 @@ const DemoEvents = () => {
                   </p>
                   <a
                 href="/events/watchEvents"
-                className="absolute bottom-3 lg:bottom-5 left-0 right-0 flex justify-center items-center w-4 h-4 bg-white rounded-full shadow-md transform translate-y-1/2 mx-auto transition duration-300 hover:bg-gray-300"
+                className="absolute bottom-3 lg:bottom-5 left-0 right-0 flex justify-center items-center w-4 h-4 bg-white rounded-full shadow-md transform translate-y-1/2 mx-auto transition duration-300 hover:bg-gray-300 cursor-pointer"
               >
                 <BiArrowToRight className="text-black w-6 h-6" />
               </a>

@@ -7,9 +7,9 @@ const ProfilePage = () => {
   const [user] = useAuthState(auth);
 
   return (
-    <div className='relative flex flex-col items-center justify-center text-center h-screen'>
-      <h1 className='text-black font-bold text-5xl mb-4'>Profile</h1>
-      <div className="border border-black p-4 rounded-lg">
+    <div className='relative flex flex-col items-center justify-center text-center h-screen bg-gradient-to-tr from-slate-700 to-lime-950'>
+      <h1 className='text-white font-bold text-5xl mb-4'>Profile</h1>
+      <div className="border border-black p-4 rounded-lg text-white">
         {user ? (
           <ul>
             <li className='mb-2'><strong>Name:</strong> {user.displayName}</li>

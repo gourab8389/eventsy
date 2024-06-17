@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className='w-full pb-10 mb-[30px] md:mb-5' id='contact'>
+        <footer className='w-full pt-5 pb-10 mb-[30px] md:mb-5' id='contact'>
             <div className="flex flex-col items-center text-white">
-                <h1 className='heading lg:max-w-[45vw]'>Ready to take <span className='text-purple'>your</span>digital presence of next level </h1>
+                <h1 className='heading lg:max-w-[45vw]'>Ready to take <span className='text-purple-500'>your</span>digital presence of next level </h1>
                 <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out me today let&apos;s discuss how I can help to achive your goals.</p>
                 <a href="mailto:deyg6988@gmail.com">
                     <MagicButton

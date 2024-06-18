@@ -10,7 +10,7 @@ const ColaborationText = () => {
                 variants={slideInFromLeft(0.5)}
                 className='text-[30px] text-white text-3xl md:text-4xl lg:text-5xl font-bold  mt-[30px] text-center mb-[15px]'
             >
-               Our Colaborations
+               Our <span className='text-purple-500'>Colaborators</span>
             </motion.div>
         </div>
     )

@@ -4,7 +4,7 @@ import ColaborationDataProvider from "./ui/ColaborationDataProvider";
 
 const Colaborations = () => {
     return (
-        <section className="flex flex-col items-center justify-center gap-3 min-h-screen relative overflow-hidden pb-20 pt-1">
+        <section className="flex flex-col items-center justify-center gap-3 h-auto relative overflow-hidden pb-20 pt-1">
             <ColaborationText />
             <div className="flex flex-row justify-center flex-wrap mt-4 gap-3 w-full px-4 md:px-8 lg:px-16">
                 {collaboration.map((image, index) => (

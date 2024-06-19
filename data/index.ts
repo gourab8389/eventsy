@@ -151,6 +151,42 @@ export const gridItem = [
     imgClassName: "w-full h-full",
   },
 ];
+export const provideItem = [
+  {
+    id: 1,
+
+    img: "/p3.jpg",
+    
+  },
+  {
+    id: 2,
+    img: "/p2.jpg",
+    
+  },
+  {
+    id: 3,
+    img: "/p4.jpg",
+    
+  },
+  {
+    id: 4,
+
+    img: "/reactsocialmedia1.png",
+    
+  },
+  {
+    id: 5,
+  
+    img: "/p7.jpg",
+    
+  },
+  {
+    id: 6,
+  
+    img: "/p6.jpg",
+    
+  },
+];
 
 
 export const demoWorks = [

@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import Colaborations from "@/components/Colaborations";
 import CollabProjects from "@/components/CollabProjects";
+import { CompanyProvides } from "@/components/CompanyProvides";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-20">
 
         <Hero />
-        <Grid/>
+        <CompanyProvides/>
         <AboutSection/>
         <CollabProjects/>
         <Colaborations />

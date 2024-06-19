@@ -1,5 +1,3 @@
-// CompanyProvides.tsx
-
 "use client";
 
 import { provideItem } from "@/data";

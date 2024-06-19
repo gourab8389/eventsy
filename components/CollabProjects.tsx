@@ -14,7 +14,7 @@ const CollabProjects = () => {
       <div className="flex flex-wrap items-center justify-center lg:justify-between p-4 gap-16 lg:gap-5 mt-10 lg:mt-5 lg:mx-10">
         {colabProjects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[20rem] h-[15rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer

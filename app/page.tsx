@@ -14,6 +14,7 @@ export default function Home() {
 
         <Hero />
         <Grid/>
+        <AboutSection/>
         <CollabProjects/>
         <Colaborations />
         <Footer />

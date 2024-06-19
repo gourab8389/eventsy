@@ -6,12 +6,12 @@ import { colabProjects } from '@/data'
 
 const CollabProjects = () => {
   return (
-    <div className="py-20 bg-black-100 text-center h-auto" id='projects'>
+    <div className="py-20  text-center h-auto" id='projects'>
       <h1 className="heading text-3xl text-white font-bold lg:text-6xl mt-5 lg:mt-8">
         Colaborating
         <span className="text-purple-500"> projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center lg:justify-between p-4 gap-16 lg:gap-5 mt-10 lg:mt-5 lg:mx-10">
         {colabProjects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"

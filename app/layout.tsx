@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
         <div className="sticky top-0 left-0 z-50 w-full">
           <NavItem />
         </div>

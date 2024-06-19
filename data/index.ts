@@ -119,17 +119,17 @@ export const gridItem = [
   {
     id: 1,
 
-    img: "foodd.png",
+    img: "p3.jpg",
     imgClassName: "w-full h-full",
   },
   {
     id: 2,
-    img: "SpaceWebsite.png",
+    img: "p2.jpg",
     imgClassName: "w-full h-full",
   },
   {
     id: 3,
-    img: "edit2.png",
+    img: "p4.jpg",
     imgClassName: "w-full h-full",
   },
   {
@@ -141,13 +141,13 @@ export const gridItem = [
   {
     id: 5,
   
-    img: "shoemap.png",
+    img: "p7.jpg",
     imgClassName: "w-full h-full",
   },
   {
     id: 6,
   
-    img: "Frame 1.png",
+    img: "p6.jpg",
     imgClassName: "w-full h-full",
   },
 ];
@@ -157,7 +157,7 @@ export const demoWorks = [
   {
     id: 1,
     title:"UI/UX Design",
-    img: "foodd.png",
+    img: "p3.jpg",
     imgClassName: "w-full h-full",
   },
   {
@@ -193,36 +193,36 @@ export const demoWorks = [
 ];
 
 
-export const projects = [
+export const colabProjects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
+    title: "Tradinfy- Smart Trading",
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    img: "foodd.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "Elminto - Electro Wave",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    img: "p6.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
+    title: "AI Sound Generator",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "p1.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
+    title: "Doubly Micropro Chip",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    img: "p5.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
   },

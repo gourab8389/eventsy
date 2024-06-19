@@ -40,11 +40,12 @@ const HeroContent = () => {
             handleClick={handleButtonClick}
           /> */}
           <button
-      onClick={handleButtonClick}
-      className='bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-md p-2 w-40 text-white hover:text-black text-center border border-transparent cursor-pointer font-bold text-xl mr-12 lg:mr-64 shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl'
-    >
-      Let's go..
-    </button>
+            type='submit'
+            onClick={handleButtonClick}
+            className='bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-500 rounded-md p-2 w-40 text-white hover:text-black text-center border border-transparent cursor-pointer font-bold text-xl mr-12 lg:mr-64 shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl'
+          >
+            Let's go..
+          </button>
         </motion.div>
       </div>
 

@@ -1,15 +1,31 @@
-import {nextui} from '@nextui-org/theme';
+import { nextui } from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
-
 const svgToDataUri = require("mini-svg-data-uri");
+const flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette");
+
+const addVariablesForColors = ({ addBase, theme }: any) => {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+};
 
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(button|ripple|spinner).js",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -98,8 +114,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui(),
+  plugins: [
+    nextui(),
     require("tailwindcss-animate"),
+    addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -122,6 +140,6 @@ const config: Config = {
       );
     },
   ],
-}satisfies Config;
+} satisfies Config;
 
 export default config;

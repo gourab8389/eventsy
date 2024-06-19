@@ -11,7 +11,7 @@ const DemoEvents = () => {
     <section>
 
       <div className="py-20 w-ful">
-        <h1 className="heading text-center text-4xl md:text-6xl lg:text-6xl font-bold">
+        <h1 className="heading text-center text-4xl md:text-6xl lg:text-6xl font-bold text-black">
           Our <span className="text-purple">Events Like</span>
         </h1>
 
@@ -29,25 +29,24 @@ const DemoEvents = () => {
               }}
               className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 items-center">
                 <img
                   src={card.thumbnail}
                   alt={card.thumbnail}
                   className="lg:w-32 md:w-20 w-16"
                 />
-                <div className="lg:ms-5">
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                <div className="lg:ms-5 items-center">
+                  <h1 className=" text-xl md:text-2xl font-bold items-center text-white">
                     {card.title}
                   </h1>
-                  <p className="text-start text-white-100 mt-3 font-semibold">
+                  <p className="text-start text-white mt-3 ">
                     {card.desc}
                   </p>
-                  <a
-                href="/events/watchEvents"
-                className="absolute bottom-3 lg:bottom-5 left-0 right-0 flex justify-center items-center w-4 h-4 bg-white rounded-full shadow-md transform translate-y-1/2 mx-auto transition duration-300 hover:bg-gray-300 cursor-pointer"
-              >
-                <BiArrowToRight className="text-black w-6 h-6" />
-              </a>
+                  <a href="/events/watchEvents">
+                  <div className="bg-gradient-to-tr from-cyan-500 to-green-200 hover:bg-gradient-to-br hover:from-emerald-400 hover:to-violet-300 mb-2 rounded-md lg:mx-3 lg:p-2 lg:mt-1 border border-blue-500 mx-6 p-2 mt-2 font-bold hover:text-white cursor-pointer">
+                    Register Here
+                  </div>
+                  </a>
                 </div>
 
               </div>

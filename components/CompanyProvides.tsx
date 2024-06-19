@@ -16,9 +16,6 @@ export function CompanyProvides() {
               <p className="font-bold text-xl">In the mountains</p>
               <p className="font-normal text-sm">₹ 2000</p>
             </DirectionAwareHover>
-            <button type="submit" className="bg-gradient-to-tr from-cyan-500 to-green-200 hover:bg-gradient-to-br hover:from-emerald-400 hover:to-violet-300 mb-2 rounded-md lg:mx-3 lg:p-2 lg:mt-1 border border-blue-500 mx-6 p-2 mt-2 font-bold hover:text-white">
-                Explore Now...
-            </button>
           </div>
         ))}
       </div>

@@ -31,44 +31,50 @@ export const DirectionAwareHover = ({
   ) => {
     if (!ref.current) return;
 
-    const direction = getDirection(event, ref.current);
-    console.log("direction", direction);
-    switch (direction) {
-      case 0:
-        setDirection("top");
-        break;
-      case 1:
-        setDirection("right");
-        break;
-      case 2:
-        setDirection("bottom");
-        break;
-      case 3:
-        setDirection("left");
-        break;
-      default:
-        setDirection("left");
-        break;
-    }
+    const direction = getDirection(event.clientX, event.clientY, ref.current);
+    setDirection(direction);
+  };
+
+  const handleTouchStart = (
+    event: React.TouchEvent<HTMLDivElement>
+  ) => {
+    if (!ref.current) return;
+
+    const touch = event.touches[0];
+    const direction = getDirection(touch.clientX, touch.clientY, ref.current);
+    setDirection(direction);
   };
 
   const getDirection = (
-    ev: React.MouseEvent<HTMLDivElement, MouseEvent>,
+    clientX: number,
+    clientY: number,
     obj: HTMLElement
   ) => {
     const { width: w, height: h, left, top } = obj.getBoundingClientRect();
-    const x = ev.clientX - left - (w / 2) * (w > h ? h / w : 1);
-    const y = ev.clientY - top - (h / 2) * (h > w ? w / h : 1);
+    const x = clientX - left - (w / 2) * (w > h ? h / w : 1);
+    const y = clientY - top - (h / 2) * (h > w ? w / h : 1);
     const d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
-    return d;
+    switch (d) {
+      case 0:
+        return "top";
+      case 1:
+        return "right";
+      case 2:
+        return "bottom";
+      case 3:
+        return "left";
+      default:
+        return "left";
+    }
   };
 
   return (
     <motion.div
       onMouseEnter={handleMouseEnter}
+      onTouchStart={handleTouchStart}
       ref={ref}
       className={cn(
-        "md:h-96 w-full md:w-60 h-60  bg-transparent rounded-lg overflow-hidden group/card relative",
+        "md:h-96 w-full md:w-60 h-60 bg-transparent rounded-lg overflow-hidden group/card relative",
         className
       )}
     >

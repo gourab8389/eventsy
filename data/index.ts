@@ -186,6 +186,18 @@ export const provideItem = [
     img: "/p6.jpg",
     
   },
+  {
+    id: 7,
+  
+    img: "/p9.jpg",
+    
+  },
+  {
+    id: 8,
+  
+    img: "/p10.jpg",
+    
+  },
 ];
 
 

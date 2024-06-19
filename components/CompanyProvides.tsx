@@ -9,7 +9,7 @@ export function CompanyProvides() {
       <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl mt-10 mb-5">
         We <span className="text-purple-500">Provides</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-4 md:px-10 lg:px-40 cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-4 md:px-10 lg:px-50 cursor-pointer">
         {provideItem.map(({ id, img }) => (
           <div key={id} className="flex flex-col w-full p-2 rounded-md bg-gradient-to-br from-teal-950 to-rose-950">
             <DirectionAwareHover id={id} imageUrl={img}>

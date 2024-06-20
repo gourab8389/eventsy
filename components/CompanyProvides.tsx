@@ -10,10 +10,10 @@ export function CompanyProvides() {
         We <span className="text-purple-500">Provides</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-4 md:px-10 lg:px-50 cursor-pointer">
-        {provideItem.map(({ id, img }) => (
+        {provideItem.map(({ id, img, title }) => (
           <div key={id} className="flex flex-col w-full p-2 rounded-md bg-gradient-to-br from-teal-950 to-rose-950">
             <DirectionAwareHover id={id} imageUrl={img}>
-              <p className="font-bold text-xl">In the mountains</p>
+              <p className="font-bold text-xl">{title}</p>
               <p className="font-normal text-sm">₹ 2000</p>
             </DirectionAwareHover>
           </div>

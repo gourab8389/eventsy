@@ -154,47 +154,49 @@ export const gridItem = [
 export const provideItem = [
   {
     id: 1,
-
+    title:"AI integration",
     img: "/p3.jpg",
     
   },
   {
     id: 2,
+    title:"Internships",
     img: "/p2.jpg",
     
   },
   {
     id: 3,
+    title:"Micro MIX",
     img: "/p4.jpg",
     
   },
   {
     id: 4,
-
+    title:"Social Provider",
     img: "/reactsocialmedia1.png",
     
   },
   {
     id: 5,
-  
+    title:"Quantum Research",
     img: "/p7.jpg",
     
   },
   {
     id: 6,
-  
+    title:"Inventing Technologies",
     img: "/p6.jpg",
     
   },
   {
     id: 7,
-  
+    title:"Software Dev",
     img: "/p9.jpg",
     
   },
   {
     id: 8,
-  
+    title:"Network Technology",
     img: "/p10.jpg",
     
   },
